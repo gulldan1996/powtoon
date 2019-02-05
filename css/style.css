@@ -165,3 +165,22 @@
   line-height: 42.2px;
   word-spacing: 2px;
 }
+
+@media only screen and (max-width : 520px) {
+  .header-img {
+    margin-bottom: 5em;
+  }
+  .header-register {
+    width: 320px;
+  }
+  .page-main {
+    flex-direction: column;
+  }
+  .main-video {
+    width: 100%;
+    max-height: 350px;
+  }
+  .main-training {
+    width: 100%;
+  }
+}
