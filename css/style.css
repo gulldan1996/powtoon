@@ -167,18 +167,19 @@
 }
 
 @media only screen and (max-width : 520px) {
-  .header-img {
-    margin-bottom: 5em;
+  .header-nav .header-img {
+    margin-bottom: 3em;
   }
   .header-register {
     width: 320px;
+    padding: 4% 0;
   }
   .page-main {
     flex-direction: column;
   }
   .main-video {
     width: 100%;
-    max-height: 350px;
+    height: 350px;
   }
   .main-training {
     width: 100%;
