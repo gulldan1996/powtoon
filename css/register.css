@@ -1,0 +1,144 @@
+legend {
+  width: 70%;
+  display: block;
+  font-size: 1.5em;
+}
+
+.form {
+  min-width: 320px;
+  max-width: 450px;
+  margin: 0 auto;
+  margin-top: 25px;
+  padding: 20px;
+  
+  background: linear-gradient(270deg, #cef2fa 0%, #59bfef 100%);
+  border-radius: 10px;
+  box-shadow: 0 0 10px #cccccc;
+
+}
+
+.form__group {
+  margin-bottom: 15px;
+  padding: 10px;
+  text-align: center;
+  border: 2px solid #34495e;
+  border-radius: 5px;
+  
+}
+
+.form__legend {
+  color: #fff;
+  font-weight: bold;
+}
+
+.form__label {
+  display: block;
+  margin-left: 40px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.form__star {
+font-size: 10px;
+color: red;
+}
+
+.form__wrap-gender {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+}
+
+.form__radio {
+  display: none;
+}
+
+.form__radio + .form__label--radio {
+margin: 12px;
+  color: #fff;
+}
+
+.form__radio + .form__label--radio:before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  margin-right: 8px;
+  vertical-align: middle;
+  border: 3px solid #ffffff;
+  box-shadow: 0 0 0 3px #bdc3c7;
+}
+
+.form__radio + .form__label--radio:before {
+  border-radius: 50%;
+}
+
+.form__radio:checked + .form__label--radio:before {
+  background: #1abc9c;
+  box-shadow: 0 0 0 3px #1abc9c;
+}
+
+.form__radio:checked + .form__label--radio {
+  color: #1abc9c;
+}
+
+.form__radio:disabled + .form__label--radio:before {
+  box-shadow: 0 0 0 3px #e5e5e5;
+}
+
+.form__radio:disabled + .form__label--radio {
+  color: #e5e5e5;
+}
+
+.form__input,
+.form__select,
+.form__textarea {
+  width: 70%;
+  margin: 0 0 20px 0;
+  padding: 2px 15px;
+  font-size: 15px;
+  border: 2px solid #cacaca;
+  border-radius: 15px;
+  vertical-align: middle;
+  resize: none;
+  outline: none;
+}
+.form__input:active,
+.form__input:focus,
+.form__select:active,
+.form__select:focus,
+.form__textarea:active,
+.form__textarea:focus {
+  border: 2px solid rgba(26, 188, 156, .7);
+}
+
+.form__input,
+.form__select {
+  height: 30px;
+}
+
+.form__buttons {
+margin-top: 10px;
+  text-align: center;
+}
+
+.form__button {
+display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 0 20px;
+  padding: 6px 25px;
+  color: #ffffff;
+  background: linear-gradient(90deg, #fd8355 0%, #f79cbd 37%, #f79cbd 100%);
+  border: none;
+  border-radius: 5px;
+}
+
+.error {
+  padding-left: 40px;
+  text-align: left;
+  color: red;
+  margin-top: -20px;
+  font-size: 15px;
+}

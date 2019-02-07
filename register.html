@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Register Form</title>
+  <link rel="stylesheet" href="css/register.css">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/scaffolding.css">
+</head>
+
+<body>
+  <main class="page-main--inner">
+    <form class="form" action="/echo" name="myform" id="myform">
+      <fieldset class="form__group">
+        <legend class="form__legend">Personal data</legend>
+
+        <label class="form__label" for="firstName">First name<sup class="form__star">&#10059;</sup></label>
+        <input class="form__input" type="text" id="firstName" data-validation="firstName">
+
+        <label class="form__label" for="lastName">Last name<sup class="form__star">&#10059;</sup></label>
+        <input class="form__input" type="text" id="lastName" data-validation="lastName">
+
+        <label class="form__label" for="birthday">Birthday<sup class="form__star">&#10059;</sup></label>
+        <input class="form__input" type="date" id="birthday" data-validation="birthday">
+
+        <label class="form__label">State<sup class="form__star">&#10059;</sup></label>
+        <div class="form__wrap-gender" data-validation="gender">
+          <input class="form__radio" type="radio" name="gender" id="gender-male" value="male">
+          <label class="form__label form__label--radio" for="gender-male">Male</label>
+          <input class="form__radio" type="radio" name="gender" id="gender-female" value="female">
+          <label class="form__label form__label--radio" for="gender-female">Female</label>
+        </div>
+      </fieldset>
+      <fieldset class="form__group">
+        <legend class="form__legend">Сontact information</legend>
+
+        <label class="form__label" for="country">Country<sup class="form__star">&#10059;</sup></label>
+        <select class="form__select" id="country" data-validation="country">
+          <option class="form__option" value="">Choose an option</option>
+          <option class="form__option" value="ukraine">Ukraine</option>
+          <option class="form__option" value="usa">Malassia</option>
+          <option class="form__option" value="russia">China</option>
+          <option class="form__option" value="russia">USA</option>
+        </select>
+        <label class="form__label" for="address">Address<sup class="form__star">&#10059;</sup></label>
+        <input class="form__input" type="text" id="address" data-validation="address">
+        
+        <label class="form__label" for="email">Email<sup class="form__star">&#10059;</sup></label>
+        <input class="form__input" type="email" id="email" data-validation="email">
+
+        <label class="form__label" for="password">Password<sup class="form__star">&#10059;</sup></label>
+        <input class="form__input" type="password" id="password" data-validation="password">
+
+      </fieldset>
+      <fieldset class="form__group">
+        <legend class="form__legend">Сommentary</legend>
+
+        <label class="form__label" for="notes">Notes</label>
+        <textarea class="form__textarea" name="notes" id="notes" cols="30" rows="10" data-validation="notes"></textarea>
+      </fieldset>
+      <div class="form__buttons">
+        <input class="form__button" type="submit" value="Send" id="submit">
+        <input class="form__button" type="reset" value="Reset">
+      </div>
+    </form>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

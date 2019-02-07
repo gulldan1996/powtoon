@@ -22,7 +22,7 @@ body {
   color: #000000;
   font-style: normal;
   font-weight: 500;
-  background-color: #fff;
+  background: linear-gradient(90deg, #fd8355 0%, #f79cbd 37%, #f79cbd 100%);
 }
 
 img {
